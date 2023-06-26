@@ -18,9 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from form1.views import cadastro_aluno
 from form2.views import cadastrar_professor
+from form3.views import cadastrar_projeto
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cadastro_aluno/', cadastro_aluno,name="cadastro_aluno"),
     path('cadastro_professor/', cadastrar_professor,name="cadastro_professor"),
+    path('cadastro_projeto/', cadastrar_projeto,name="cadastro_projeto"),
+
 ]
